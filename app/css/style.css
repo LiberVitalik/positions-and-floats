@@ -84,7 +84,9 @@ html {
         background: #6e6d6b;
         color: black; }
   .content-wrapper .content-inform__column {
-    width: 25%; }
+    width: 25%;
+    display: block !important;
+    float: left; }
     .content-wrapper .content-inform__column p {
       font-family: 'MyriadProRegular', Arial, sans-serif;
       padding: 35px 20px 0;
@@ -99,13 +101,13 @@ html {
         text-decoration: underline; }
   .content-wrapper .content-inform,
   .content-wrapper .main-content {
-    display: table;
     margin: 0 auto;
-    width: 1190px;
+    max-width: 1200px;
+    overflow: hidden;
     box-sizing: border-box; }
     .content-wrapper .content-inform__column,
     .content-wrapper .main-content__column {
-      display: table-cell;
+      display: inline-block;
       vertical-align: top;
       box-sizing: border-box; }
   .content-wrapper .main-content-wrapper h4 {
@@ -162,8 +164,7 @@ html {
   .content-wrapper .main-feedback__form label span {
     font-family: 'StMarieThin', Arial, sans-serif;
     color: #fb9c06;
-    font-size: 24px;
-    /*margin-right: 57px;*/ }
+    font-size: 24px; }
   .content-wrapper .main-feedback__form label input,
   .content-wrapper .main-feedback__form label textarea {
     font-family: 'StMarieThin', Arial, sans-serif;

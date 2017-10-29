@@ -129,6 +129,8 @@ html {
     .content-inform {
         &__column {
             width: 25%;
+            display: block !important;
+            float: left;
 
             p {
                 @include MyriadPro-Regular;
@@ -152,13 +154,13 @@ html {
 
     .content-inform,
     .main-content {
-        display: table;
         margin: 0 auto;
-        width: 1190px;
+        max-width: 1200px;
+        overflow: hidden;
         box-sizing: border-box;
 
         &__column {
-            display: table-cell;
+            display: inline-block;
             vertical-align: top;
             box-sizing: border-box;
         }
@@ -259,7 +261,6 @@ html {
 
                     color: $color_brand;
                     font-size: 24px;
-                    /*margin-right: 57px;*/
                 }
 
                 input,
