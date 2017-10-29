@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%; }
+  body a {
+    display: block;
+    text-decoration: none; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+.main-header-wrapper {
+  width: 100%;
+  height: 128px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: white; }
+  .main-header-wrapper .main-header__logo {
+    width: 300px;
+    margin: 0;
+    float: left; }
+    .main-header-wrapper .main-header__logo img {
+      margin: 8px 0 0 18px; }
+  .main-header-wrapper .main-header .main-navigation {
+    width: 600px;
+    float: right; }
+    .main-header-wrapper .main-header .main-navigation ul {
+      height: 128px;
+      position: relative;
+      overflow: hidden; }
+      .main-header-wrapper .main-header .main-navigation ul li {
+        height: 93px;
+        float: left;
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 20px;
+        padding: 5px; }
+        .main-header-wrapper .main-header .main-navigation ul li:hover {
+          border-bottom: 5px solid #6e6d6b; }
+        .main-header-wrapper .main-header .main-navigation ul li a {
+          text-align: center; }
+          .main-header-wrapper .main-header .main-navigation ul li a .logo-image-wrapper {
+            height: 55px;
+            display: table-cell;
+            vertical-align: bottom; }
+          .main-header-wrapper .main-header .main-navigation ul li a span {
+            display: block;
+            margin-top: 8px;
+            color: #6e6d6b; }
+
+.content-wrapper {
+  margin-bottom: 70px; }
+  .content-wrapper .inform {
+    height: 400px;
+    margin-top: 128px;
+    border-top: 4px solid #fb9c06;
+    border-bottom: 4px solid #fb9c06;
+    background: url("../img/big-orange-bg.png");
+    background-size: cover; }
+    .content-wrapper .inform .wrap {
+      position: relative; }
+      .content-wrapper .inform .wrap button {
+        font-family: 'Bebas', Arial, sans-serif;
+        position: absolute;
+        opacity: 0.7;
+        padding: 10px 10px 10px 20px;
+        font-size: 36px;
+        display: block;
+        border: none; }
+        .content-wrapper .inform .wrap button:hover {
+          outline: 5px double #fb9c06; }
+      .content-wrapper .inform .wrap :first-child {
+        top: 130px;
+        left: 8px;
+        background: black;
+        color: #fb9c06; }
+      .content-wrapper .inform .wrap :last-child {
+        top: 223px;
+        left: 0;
+        background: #6e6d6b;
+        color: black; }
+  .content-wrapper .content-inform__column {
+    width: 25%; }
+    .content-wrapper .content-inform__column p {
+      font-family: 'MyriadProRegular', Arial, sans-serif;
+      padding: 35px 20px 0;
+      font-size: 14px; }
+    .content-wrapper .content-inform__column a {
+      display: block;
+      text-align: right;
+      margin: 8px 5px 20px 0;
+      color: #fb9c06;
+      cursor: pointer; }
+      .content-wrapper .content-inform__column a:hover {
+        text-decoration: underline; }
+  .content-wrapper .content-inform,
+  .content-wrapper .main-content {
+    display: table;
+    margin: 0 auto;
+    width: 1190px;
+    box-sizing: border-box; }
+    .content-wrapper .content-inform__column,
+    .content-wrapper .main-content__column {
+      display: table-cell;
+      vertical-align: top;
+      box-sizing: border-box; }
+  .content-wrapper .main-content-wrapper h4 {
+    width: 270px;
+    margin-bottom: 40px; }
+  .content-wrapper .main-content-wrapper .main-content {
+    text-align: center; }
+    .content-wrapper .main-content-wrapper .main-content__column {
+      width: 33%; }
+      .content-wrapper .main-content-wrapper .main-content__column:hover .main-content__user-foto {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
+    .content-wrapper .main-content-wrapper .main-content__user-name {
+      font-family: 'MyriadProRegular', Arial, sans-serif;
+      color: #6e6d6b;
+      margin: 0 auto;
+      margin-bottom: 28px;
+      text-align: center; }
+      .content-wrapper .main-content-wrapper .main-content__user-name span {
+        color: #fb9c06; }
+    .content-wrapper .main-content-wrapper .main-content__user-foto {
+      width: 310px;
+      height: 310px;
+      margin: 0 auto;
+      margin-bottom: 28px;
+      border: 10px solid #fb9c06;
+      border-radius: 50%;
+      transition: .5s; }
+      .content-wrapper .main-content-wrapper .main-content__user-foto img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+    .content-wrapper .main-content-wrapper .main-content__text {
+      font-family: 'CalibriRegular', Arial, sans-serif;
+      color: #6e6d6b;
+      margin-bottom: 80px; }
+  .content-wrapper h4 {
+    margin: 0 auto; }
+    .content-wrapper h4 a {
+      font-family: 'StMarieThin', Arial, sans-serif;
+      font-size: 40px;
+      display: block;
+      text-align: center;
+      color: #fb9c06;
+      border-bottom: 2px solid #fb9c06; }
+      .content-wrapper h4 a:hover {
+        border-bottom: none;
+        margin-bottom: 42px; }
+  .content-wrapper .main-feedback h4 {
+    width: 375px;
+    margin-bottom: 65px; }
+    .content-wrapper .main-feedback h4:hover {
+      margin-bottom: 67px; }
+  .content-wrapper .main-feedback__form label span {
+    font-family: 'StMarieThin', Arial, sans-serif;
+    color: #fb9c06;
+    font-size: 24px;
+    /*margin-right: 57px;*/ }
+  .content-wrapper .main-feedback__form label input,
+  .content-wrapper .main-feedback__form label textarea {
+    font-family: 'StMarieThin', Arial, sans-serif;
+    float: right;
+    margin-bottom: 20px;
+    width: 1070px;
+    max-width: 1070px;
+    padding-left: 5px;
+    border: 1px solid #d2d0cf;
+    border-left: 5px solid #d2d0cf; }
+  .content-wrapper .main-feedback__form label input {
+    height: 35px; }
+  .content-wrapper .main-feedback__form label textarea {
+    height: 90px;
+    min-width: 1070px;
+    min-height: 90px;
+    padding-top: 5px; }
+  .content-wrapper .main-feedback__form label .submit {
+    font-family: 'StMarieThin', Arial, sans-serif;
+    font-size: 30px;
+    width: 177px;
+    height: 48px;
+    border: none;
+    background: #fb9c06;
+    color: white;
+    border-bottom: 2px solid #cc830f; }
+    .content-wrapper .main-feedback__form label .submit:hover {
+      background: #cd9338; }
+
+.main-footer {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  background: #fb9c06;
+  text-align: center; }
+  .main-footer p {
+    font-family: 'StMarieThin', Arial, sans-serif;
+    height: 40px;
+    font-size: 33px;
+    color: white;
+    margin-top: 17px; }
+
+.wrap {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
