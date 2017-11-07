@@ -1,18 +1,8 @@
 @import "_mixins";
 @import "_variables";
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     height: 100%;
-
-    a {
-        display: block;
-        text-decoration: none;
-    }
 }
 
 html {
@@ -36,6 +26,23 @@ html {
 
             img {
                 margin: 8px 0 0 18px;
+                float: left;
+            }
+
+            .logo-text {
+                width: 150px;
+                max-height: 128px;
+                float: right;
+                margin-top: 15px;
+
+                span {
+                    color: $color_brand;
+                }
+
+                :last-child {
+                    @include Bebas;
+                    color: $color_brand-menu;
+                }
             }
         }
 
@@ -44,29 +51,56 @@ html {
             float: right;
 
             ul {
-                height: 128px;
-                position: relative;
                 overflow: hidden;
+                margin-top: 20px;
+
 
                 li {
-                    height: 93px;
-                    float: left;
                     list-style: none;
-                    margin-left: 62px;
-                    margin-top: 20px;
-                    padding: 5px;
-
-                    &:hover {
-                        border-bottom: 5px solid $color_brand-menu;
-                    }
+                    display: table-cell;
+                    vertical-align: bottom;
 
                     a {
                         text-align: center;
+                        margin-left: 60px;
+                        &:hover {
+                            .menu-icon {
+                                background-position: bottom;
+                            }
+                        }
 
-                        .logo-image-wrapper {
-                            height: 55px;
-                            display: table-cell;
-                            vertical-align: bottom;
+                        .menu-icon {
+                            background-position: top;
+                        }
+
+                        .menu-home {
+                            width: 54px;
+                            height: 46px;
+                            background: url("../img/home-icon.png");
+                        }
+
+                        .menu-about {
+                            width: 22px;
+                            height: 44px;
+                            background: url("../img/about-icon.png");
+                        }
+
+                        .menu-work {
+                            width: 42px;
+                            height: 42px;
+                            background: url("../img/work-icon.png");
+                        }
+
+                        .menu-blog {
+                            width: 40px;
+                            height: 40px;
+                            background: url("../img/blog-icon.png");
+                        }
+
+                        .menu-contact {
+                            width: 49px;
+                            height: 33px;
+                            background: url("../img/contact-icon.png");
                         }
 
                         span {
@@ -102,8 +136,10 @@ html {
                 opacity: 0.7;
                 padding: 10px 10px 10px 20px;
                 font-size: 36px;
-                display: block;
                 border: none;
+                max-height: 67px;
+                max-width: 500px;
+                overflow: hidden;
 
                 &:hover {
                     outline: 5px double $color_brand;
@@ -129,18 +165,21 @@ html {
     .content-inform {
         &__column {
             width: 25%;
-            display: block !important;
+            display: block;
             float: left;
 
             p {
                 @include MyriadPro-Regular;
                 padding: 35px 20px 0;
                 font-size: 14px;
+                max-height: 390px;
+                overflow: hidden;
             }
 
             a {
                 display: block;
-                text-align: right;
+                max-width: 150px;
+                float: right;
                 margin: 8px 5px 20px 0;
                 color: $color_brand;
                 cursor: pointer;
@@ -163,6 +202,7 @@ html {
             display: inline-block;
             vertical-align: top;
             box-sizing: border-box;
+            margin-right: -4px;
         }
     }
 
@@ -211,7 +251,6 @@ html {
                     width: 100%;
                     height: 100%;
                     border-radius: 50%;
-
                 }
             }
 
@@ -219,6 +258,8 @@ html {
                 @include Calibri-Regular;
                 color: $color_brand-menu;
                 margin-bottom: 80px;
+                max-height: 110px;
+                overflow: auto;
             }
         }
     }
